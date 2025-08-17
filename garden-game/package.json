@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:pages": "REPO_NAME=$npm_config_repo tsc -b && REPO_NAME=$npm_config_repo vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
