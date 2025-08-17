@@ -46,11 +46,7 @@ export function TreatmentsPage() {
 		refresh()
 	}
 
-	async function remove(id?: number) {
-		if (!id) return
-		await db.treatments.delete(id)
-		refresh()
-	}
+	// removed unused remove()
 
 	return (
 		<div className="grid gap-6">
